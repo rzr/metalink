@@ -22,6 +22,9 @@ clean:
 	[ ! -f Makefile ] || $(MAKE) distclean
 	dh_clean
 
+configure: bootstrap
+	${SHELL} ${<D}/${<F}
+
 config.status: configure
 	dh_testdir
 
