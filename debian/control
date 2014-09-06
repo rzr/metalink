@@ -2,8 +2,12 @@ Source: metalink
 Section: net
 Priority: extra
 Maintainer: Patrick Ruckstuhl <patrick@tario.org>
-Build-Depends: debhelper (>= 7), autotools-dev, libglibmm-2.4-dev,
- libgcrypt-dev, libboost-program-options-dev, libboost-filesystem-dev,
+Build-Depends: debhelper (>= 7),
+ autotools-dev, automake,
+ autoconf, autoconf-archive,
+ libglibmm-2.4-dev,
+ libgcrypt11-dev | libgcrypt-dev,
+ libboost-program-options-dev, libboost-filesystem-dev,
  libboost-regex-dev
 Standards-Version: 3.9.2
 Homepage: http://metalinks.sf.net
